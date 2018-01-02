@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#146bbc</color>
+    <color name="blues">#2683c2</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ab0003</color>
+    <color name="btncolor">#ffffff</color>
+    <color name="black_alpha_40">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dark_grey">#424242</color>
+    <color name="medium_grey">#9E9E9E</color>
+    <color name="button_grey">#757575</color>
+    <color name="share">#ad081e59</color>
+    <color name="colorbg">#ad2970a5</color>
+
+    bgcolor
+
+    <color name="bgcolor">#bb4398c2</color>
+
+
+
+    <color name="colorPrimaryTrans">#a06dc8f4</color>
+    <color name="colorAccentTrans">#a0027fb0</color>
+    <color name="colorBlackTrans">#a0000000</color>
+
+
+
+
+    <color name="color_primary">#2196F3</color>
+    <color name="color_primary_dark">#1976D2</color>
+    <color name="accent_color">#ffffff</color>
+
+</resources>

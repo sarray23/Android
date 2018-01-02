@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#a1baff"
+    tools:context="sim.espritmobile.com.histoiretunisie.LoginActivity">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tunisiehistoiree"
+            android:id="@+id/img"/>
+
+        <EditText
+            android:layout_below="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Email or login"
+            android:id="@+id/emaillogin"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordlogin"
+            android:layout_margin="15dp"
+            android:layout_below="@+id/emaillogin"
+            android:inputType="textPassword"
+            android:hint="Mot de passe"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#000000"
+            android:text="S'inscrire "
+            android:textStyle="bold"
+            android:layout_below="@+id/passwordlogin"
+            android:id="@+id/register"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"/>
+
+
+        <Button android:layout_width="190dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Se connecter"
+            android:textColor="#fff"
+            android:textSize="13dp"
+            android:id="@+id/connect"
+            android:layout_below="@+id/register"
+            android:background="#13b586"/>
+
+        <Button android:layout_width="190dp"
+            android:id="@+id/btnfacebook"
+            android:layout_below="@+id/connect"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Login with facebook"
+            android:textColor="#fff"
+            android:textSize="13dp"
+            android:background="#2683c2"/>
+
+        <Button android:layout_width="190dp"
+            android:layout_height="38dp"
+            android:id="@+id/btngoogle"
+            android:layout_below="@+id/btnfacebook"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="Login with google+"
+            android:textColor="#fff"
+            android:textSize="13dp"
+            android:background="#eb543b"/>
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

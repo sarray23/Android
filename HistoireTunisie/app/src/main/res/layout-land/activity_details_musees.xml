@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="sim.espritmobile.com.histoiretunisie.DetailsMusees">
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/AppTheme.NoActionBar.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/imgdetaille"
+        android:layout_below="@+id/app_bar"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        app:layout_anchor="@id/app_bar"
+        app:backgroundTint="@color/share"
+        app:layout_anchorGravity="bottom|end"
+        android:layout_alignRight="@+id/imgdetaille"
+        android:layout_alignLeft="@+id/imgdetaille"
+
+        android:layout_alignEnd="@+id/imgdetaille"
+        android:layout_below="@+id/imgdetaille"
+        app:srcCompat="@android:drawable/ic_menu_share" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:id="@+id/listdetail"
+        android:layout_below="@+id/fab"
+        />
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mapdetail"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listdetail"
+        tools:showIn="@layout/activity_details_musees"
+        tools:context="sim.espritmobile.com.histoiretunisie.MapsActivity" />
+
+</RelativeLayout>
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

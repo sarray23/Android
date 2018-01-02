@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg">
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/backgroundimg"
+            android:src="@drawable/experien"
+            android:scaleX="1"
+            android:scaleY="1.1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:layout_width="550px"
+            android:layout_height="300px"
+            android:layout_marginTop="20dp"
+            android:id="@+id/logo"
+            android:background="@drawable/tunisiehistoiree"
+android:layout_centerHorizontal="true"
+
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:text=" List Experiences"
+            android:textStyle="bold"
+            android:textColor="@color/btncolor"
+            android:alpha="0.9"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_border"
+            android:padding="30dp"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+
+            />
+
+
+
+
+
+    </RelativeLayout>
+</FrameLayout>
+
+

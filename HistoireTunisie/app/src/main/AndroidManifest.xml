@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sim.espritmobile.com.histoiretunisie">
+
+    <permission
+        android:name="com.example.googlemaps.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+
+
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+
+
+        <activity
+            android:name=".Accueil"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" >
+
+
+
+        </activity>
+
+        <activity
+            android:name=".Experience.ExperienceActivity"
+            android:label="Experiences"
+         >
+
+
+
+        </activity>
+        <activity
+            android:name=".ListCategorie"
+            android:label="@string/title_activity_categorie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Connexion" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Inscription" />
+        <activity
+            android:name=".musees.ListMusees"
+            android:label="Nos musées" />
+        <activity
+            android:name=".sites.ListSites"
+            android:label="Nos sites" />
+        <activity
+            android:name=".monuments.ListMonuments"
+            android:label="Nos monuments" />
+        <activity
+            android:name=".personnages.ListPersonnages"
+            android:label="Nos personnages" />
+        <activity
+            android:name=".Experience.ExperiencesUsersActivity"
+            android:label="Expériences vecu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".parcours.Itineraire"
+            android:label="@string/title_activity_itineraire" />
+        <activity
+            android:name=".DetailsMusees"
+            android:label="@string/title_activity_details_musees"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChoseExperienceActivity"
+            android:label="EXPERIENCES"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".SigninActivity"
+            android:label="Exp"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Experience.AddExperienceActivity"
+            android:label=""
+            >
+
+
+
+        </activity>
+        <activity
+            android:name=".DetailMonument"
+            android:label="@string/title_activity_details_musees"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DetailSite"
+            android:label="@string/title_activity_details_musees"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SousDetails"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+
+    </application>
+
+</manifest>

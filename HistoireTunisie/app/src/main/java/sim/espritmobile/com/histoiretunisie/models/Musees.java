@@ -1,0 +1,103 @@
+package sim.espritmobile.com.histoiretunisie.models;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * Created by sarra on 11/15/2016.
+ */
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Musees  {
+   private String id,nom,description;
+    private String Img;
+    private double longitude,lattitude;
+
+    private ArrayList<Details> detailsList=new ArrayList<>();
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
+    }
+
+    public double getLattitude() {
+        return lattitude;
+    }
+
+    public void setLattitude(double lattitude) {
+        this.lattitude = lattitude;
+    }
+
+
+    public Musees() {
+        super();
+    }
+
+    public Musees(String id, String nom, String description) {
+        this.id = id;
+        this.nom = nom;
+        this.description = description;
+    }
+
+    public ArrayList<Details> getDetailsList() {
+        return detailsList;
+    }
+
+    public void setDetailsList(ArrayList<Details> detailsList) {
+        this.detailsList = detailsList;
+    }
+
+    public Musees(String id, String nom, String description, String img) {
+        this.id = id;
+        this.nom = nom;
+        this.description = description;
+        Img = img;
+    }
+
+    public String getImg() {
+        return Img;
+    }
+
+    public void setImg(String img) {
+        Img = img;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Musees(String id, String nom) {
+        super();
+        this.id = id;
+        this.nom = nom;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+
+}

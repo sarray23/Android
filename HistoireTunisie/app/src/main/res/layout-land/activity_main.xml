@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    tools:context="sim.espritmobile.com.histoiretunisie.MainActivity">
+
+
+    <ProgressBar
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarr"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="false"
+        android:progress="2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="296dp"
+        android:layout_height="150dp"
+        android:id="@+id/backgroundimg"
+        android:src="@drawable/logoporte"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:layout_width="296dp"
+        android:layout_height="150dp"
+
+        android:id="@+id/backgroundimgtitre"
+        android:src="@drawable/logotitrenoire"
+        android:layout_below="@+id/backgroundimg"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

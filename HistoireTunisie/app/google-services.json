@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "552515164607",
+    "firebase_url": "https://histoiretunisie-fa10e.firebaseio.com",
+    "project_id": "histoiretunisie-fa10e",
+    "storage_bucket": "histoiretunisie-fa10e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552515164607:android:7d61b4c1c0b4269e",
+        "android_client_info": {
+          "package_name": "sim.espritmobile.com.histoiretunisie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552515164607-ffhirc9gkr9s0op8rvj1j848rbano2gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sim.espritmobile.com.histoiretunisie",
+            "certificate_hash": "76E8BDD001ED903AF0418BA16D947FF150EE881B"
+          }
+        },
+        {
+          "client_id": "552515164607-69ne70k7bjjjgi90cqel43bvb3tjk6e0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sim.espritmobile.com.histoiretunisie",
+            "certificate_hash": "A6AB1BA9B5463289A2B454BC1F98F1C13D573FDF"
+          }
+        },
+        {
+          "client_id": "552515164607-5liqqtj1udpgbdqe7jceni5nip4udlji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIqauQijVN6by5zCd56MTb9pZGgI0_huA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552515164607-5liqqtj1udpgbdqe7jceni5nip4udlji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

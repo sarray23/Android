@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="sim.espritmobile.com.histoiretunisie.RegisterActivity"
+    android:background="#02c3d4">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="16dp"
+            android:text="INSCRIVEZ VOUS ICI"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#fbfefd"
+
+            />
+
+        <EditText
+            android:id="@+id/nomm"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_margin="16dp"
+            android:ems="10"
+            android:hint="ENTRER VOTRE NOM"
+            android:background="#fbfefd"
+            android:gravity="center" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/maill"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="16dp"
+            android:layout_below="@+id/nomm"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="ENTRER VOTRE EMAIL "
+            android:inputType="textEmailAddress"
+            android:background="#fbfefd"
+            android:gravity="center" >
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/passw"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_margin="16dp"
+            android:layout_below="@+id/maill"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:hint=" MOT DE PASSE"
+            android:inputType="textPassword"
+            android:background="#fbfefd"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/valider"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_below="@+id/passw"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="Continuer"
+            android:background="#d8dbdb"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
